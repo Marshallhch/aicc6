@@ -1,11 +1,14 @@
-import Header from './Header';
-
-const Section = ({ num }) => {
-  console.log(num);
+const Section = ({ title, contents, article }) => {
   return (
     <div className="section">
-      <h1>Section {num}</h1>
-      <Header />
+      {/* JSX에서는 객체를 사용할 수 없다. */}
+      <h1>{title}</h1>
+      <div>{contents}</div>
+      <div>
+        {article.map((article, idx) => (
+          <div key={idx}>{article}</div>
+        ))}
+      </div>
     </div>
   );
 };
