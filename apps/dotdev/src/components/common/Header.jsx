@@ -12,7 +12,7 @@ const Header = () => {
     setMobileOpen(!mobileOpen);
   };
   return (
-    <nav className="top-0 z-50 border-b border-neutral-700/80 backdrop-blur-lg">
+    <nav className="sticky top-0 z-50 border-b border-neutral-700/80 backdrop-blur-lg">
       <div className="container relative">
         <div className="nav-inside-wrapper flex items-center justify-between">
           <div className="logo-wrapper flex items-center gap-2">

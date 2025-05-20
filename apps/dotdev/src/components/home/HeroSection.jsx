@@ -38,14 +38,14 @@ const HeroSection = () => {
         ))}
       </div>
 
-      <div className="video-wrapper">
+      <div className="video-wrapper flex flex-col md:flex-row gap-2 mt-10">
         {videos.map((video, idx) => (
           <video
             autoPlay
             loop
             muted
             key={idx}
-            className="rounded-lg w-full md:w-1/2 border border-indigo-700 shadow-sm shadow-indigo-400 my-auto mx-auto md:my-4 md:mx-2"
+            className="rounded-lg w-full md:w-[calc(50%-0.5rem)] border border-indigo-700 shadow-sm shadow-indigo-400 my-auto mx-auto md:my-4"
           >
             <source src={video.src} type={video.type} />
           </video>
